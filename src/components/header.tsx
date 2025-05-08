@@ -36,13 +36,7 @@ export default function Header() {
           </li>
           <li className="text-5xl pointer-events-none">|</li>
           <li className="text-3xl pt-[5px]">
-            <Link
-              href={
-                "https://unsplash.com/photos/yellow-magnolia-flowers-blossom-on-a-branch-WZzAGBmw5sY"
-              }
-            >
-              My CV
-            </Link>
+            <Link href="/cv">My CV</Link>
           </li>
           <li className="text-5xl pointer-events-none">|</li>
           <li className="text-3xl  pt-[5px]">
