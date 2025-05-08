@@ -12,14 +12,12 @@ export default function Home() {
           <div>
             <p>to my page, my name is Nikola</p>
             <p className="w-150">
-              art cupcake tart icing bonbon donut. Marshmallow pastry
-              gingerbread marshmallow tootsie roll candy canes powder lemon
-              drops. Cake brownie cupcake candy gummies sweet roll shortbread
-              lemon drops sweet. Gummi bears gingerbread lemon drops cake
-              tootsie roll candy. Croissant cake candy canes tootsie roll
-              shortbread macaroon chupa chups marzipan. Dessert pastry pie candy
-              canes jujubes bonbon danish pastry. Dessert lollipop chocolate bar
-              powder chocolate cake chupa chups.{" "}
+              My journey into web development began in 2023, after my boyfriend
+              inspired me with his own career change. After many hours spent
+              learning, I found React to be the one that made the most sense to
+              me and fit the way I think. Now, I'm learning Next.js and Tailwind
+              CSS as I continue taking small, steady steps toward becoming a
+              confident and skilled React Master.
             </p>
           </div>
         </div>

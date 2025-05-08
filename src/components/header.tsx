@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div>
-      <nav className="h-11">
+      <nav>
         <ul className="flex flex-row-reverse pt-2 gap-3">
-          <li className="pr-2">
+          <li className="pr-2 pt-[7px]">
             <a
               href="https://github.com/Tunyacek"
               target="_blank"
@@ -14,13 +14,13 @@ export default function Header() {
               <img
                 src="/github-mark.svg"
                 alt="Github Icon"
-                width={26}
-                height={26}
+                width={30}
+                height={30}
               />
             </a>
           </li>
-          <li className="text-2xl pointer-events-none">|</li>
-          <li>
+          <li className="text-5xl pointer-events-none">|</li>
+          <li className=" pt-[7px]">
             <a
               href="https://www.linkedin.com/in/nik-berankova/"
               target="_blank"
@@ -29,13 +29,13 @@ export default function Header() {
               <img
                 src="/InBug-Black.png"
                 alt="Linkedin Icon"
-                width={26}
-                height={26}
+                width={30}
+                height={30}
               />
             </a>
           </li>
-          <li className="text-2xl pointer-events-none">|</li>
-          <li className="text-xl">
+          <li className="text-5xl pointer-events-none">|</li>
+          <li className="text-3xl pt-[5px]">
             <Link
               href={
                 "https://unsplash.com/photos/yellow-magnolia-flowers-blossom-on-a-branch-WZzAGBmw5sY"
@@ -44,8 +44,8 @@ export default function Header() {
               My CV
             </Link>
           </li>
-          <li className="text-2xl pointer-events-none">|</li>
-          <li className="text-xl">
+          <li className="text-5xl pointer-events-none">|</li>
+          <li className="text-3xl  pt-[5px]">
             <Link
               href={
                 "https://unsplash.com/photos/silhouette-of-leaves-against-a-colorful-sunset-wF83jEn6ZKA"
@@ -56,7 +56,6 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <hr />
     </div>
   );
 }

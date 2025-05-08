@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Berkshire_Swash,
-  Delius_Swash_Caps,
-  Emilys_Candy,
-  Meow_Script,
-} from "next/font/google";
+import { Delius, Emilys_Candy, Meow_Script } from "next/font/google";
 import "./globals.css";
 
 const emily = Emilys_Candy({
@@ -13,7 +8,7 @@ const emily = Emilys_Candy({
   variable: "--font-emily",
 });
 
-const delius = Delius_Swash_Caps({
+const delius = Delius({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-delius",
