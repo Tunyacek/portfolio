@@ -4,7 +4,7 @@ body {
   background-color: hsla(340, 100%, 74%, 0.384);
 }
 
-li {
+ul li {
   font-family: var(--font-emily), sans-serif; }
 
   h1 {
@@ -12,5 +12,9 @@ li {
     font-family: var(--font-meow), cursive; }
 
     p {
+      font-family: var(--font-delius), serif; 
+    }
+
+    ol li {
       font-family: var(--font-delius), serif; 
     }
