@@ -5,7 +5,7 @@ export default function Header() {
     <div>
       <nav className="h-[150px]">
         <ul className="flex flex-row-reverse pt-5 pr-10 gap-3">
-          <li className="pr-2 pt-[7px]">
+          <li className="pr-2 pt-[6px]">
             <a
               href="https://github.com/Tunyacek"
               target="_blank"
@@ -46,6 +46,12 @@ export default function Header() {
               }
             >
               My portfolio
+            </Link>
+          </li>
+          <li className="text-5xl pointer-events-none">|</li>
+          <li className="text-3xl pt-[5px]">
+            <Link href="/">
+              <img src="home.svg" alt="Home Icon" width={40} height={40} />
             </Link>
           </li>
         </ul>
