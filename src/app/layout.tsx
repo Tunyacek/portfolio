@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Delius, Emilys_Candy, Meow_Script } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const emily = Emilys_Candy({
   subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-emily",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const delius = Delius({
   subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-delius",
+});
+
+const meow = Meow_Script({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-meow",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${meow.variable} ${delius.variable} ${emily.variable} antialiased`}
       >
         {children}
       </body>
