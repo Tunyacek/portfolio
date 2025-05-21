@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div>
-      <nav className="h-[150px]">
+      <nav className="h-[125px]">
         <ul className="flex flex-row-reverse pt-5 pr-10 gap-3">
           <li className="pr-2 pt-[6px]">
             <a
