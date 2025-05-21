@@ -40,13 +40,7 @@ export default function Header() {
           </li>
           <li className="text-5xl pointer-events-none">|</li>
           <li className="text-3xl  pt-[5px]">
-            <Link
-              href={
-                "https://unsplash.com/photos/silhouette-of-leaves-against-a-colorful-sunset-wF83jEn6ZKA"
-              }
-            >
-              My portfolio
-            </Link>
+            <Link href="/portfolio">My portfolio</Link>
           </li>
           <li className="text-5xl pointer-events-none">|</li>
           <li className="text-3xl pt-[5px]">
