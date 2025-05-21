@@ -16,7 +16,11 @@ export default function Experience() {
             During this time, I focused on learning and building projects using
             technologies like React, TypeScript, Express, and Prisma. You can
             find my project{" "}
-            <a href=" https://nomnomnation.vercel.app/" className="underline">
+            <a
+              href=" https://nomnomnation.vercel.app/"
+              className="underline"
+              target="_blank"
+            >
               here!
             </a>{" "}
             or on my Github.
