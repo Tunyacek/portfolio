@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="flex flex-row gap-50 justify-center">
+      <div className="flex flex-row gap-50 justify-center pt-10">
         <div className="flex flex-col gap-15">
           <div>
             <h1 className="text-8xl mb-[-10px] -rotate-10"> ✨Welcome!</h1>

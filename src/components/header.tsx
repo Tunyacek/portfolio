@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div>
-      <nav className="h-[150px]">
+      <nav className="h-[125px]">
         <ul className="flex flex-row-reverse pt-5 pr-10 gap-3">
-          <li className="pr-2 pt-[7px]">
+          <li className="pr-2 pt-[6px]">
             <a
               href="https://github.com/Tunyacek"
               target="_blank"
@@ -36,13 +36,7 @@ export default function Header() {
           </li>
           <li className="text-5xl pointer-events-none">|</li>
           <li className="text-3xl pt-[5px]">
-            <Link
-              href={
-                "https://unsplash.com/photos/yellow-magnolia-flowers-blossom-on-a-branch-WZzAGBmw5sY"
-              }
-            >
-              My CV
-            </Link>
+            <Link href="/cv">My CV</Link>
           </li>
           <li className="text-5xl pointer-events-none">|</li>
           <li className="text-3xl  pt-[5px]">
@@ -52,6 +46,12 @@ export default function Header() {
               }
             >
               My portfolio
+            </Link>
+          </li>
+          <li className="text-5xl pointer-events-none">|</li>
+          <li className="text-3xl pt-[5px]">
+            <Link href="/">
+              <img src="home.svg" alt="Home Icon" width={40} height={40} />
             </Link>
           </li>
         </ul>
