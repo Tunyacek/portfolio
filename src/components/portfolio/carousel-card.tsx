@@ -10,21 +10,20 @@ import PorftolioCarousel from "@/components/portfolio/carousel";
 
 export default function CarouselCard() {
   return (
-    <div className=" pb-10">
-      <Card>
-        <div className="flex flex-col gap-10 justify-center items-center">
-          <CardHeader>
-            <CardTitle>
-              <p className="font-bold text-5xl ">NomNomNation</p>
-            </CardTitle>
-            <CardDescription>
-              <p className=" w-150 text-lg">
-                My first app ever — NomNomNation, a recipe app where I and
-                others can keep all our favorite recipes in one place.
-              </p>
-            </CardDescription>
-          </CardHeader>
-        </div>
+    <div className="flex flex-col justify-center items-center">
+      <Card className="w-250">
+        <CardHeader className="flex flex-col justify-center items-center">
+          <CardTitle>
+            <p className="font-bold text-5xl ">NomNomNation</p>
+          </CardTitle>
+          <CardDescription>
+            <p className=" w-150 text-lg">
+              My first app ever — NomNomNation, a recipe app where I and others
+              can keep all our favorite recipes in one place.
+            </p>
+          </CardDescription>
+        </CardHeader>
+
         <CardContent>
           <div className="pt-5 flex flex-col gap-1 justify-center items-center">
             <div className=" w-105">

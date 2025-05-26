@@ -18,7 +18,7 @@ export default function PorftolioCarousel() {
     <div className="flex justify-center">
       <Carousel
         plugins={[plugin.current]}
-        className="w-300 "
+        className="w-100 "
         onMouseEnter={() => {
           plugin.current.stop();
         }}
@@ -28,22 +28,40 @@ export default function PorftolioCarousel() {
       >
         <CarouselContent>
           <CarouselItem>
-            <img className="rounded-3xl w-300  h-145" src="home-image.png" />
-          </CarouselItem>
-          <CarouselItem>
             <img
-              className="rounded-3xl w-300  h-145"
-              src="login-register-image.png"
+              className="rounded-3xl w-100 object-cover h-75"
+              src="home-image.png"
             />
           </CarouselItem>
           <CarouselItem>
-            <img className="rounded-3xl w-300  h-145" src="create-image.png" />
+            <img
+              className="rounded-3xl w-100  object-cover h-75"
+              src="register-image.png"
+            />
           </CarouselItem>
           <CarouselItem>
-            <img className="rounded-3xl w-300  h-145" src="preview-image.png" />
+            <img
+              className="rounded-3xl w-100  object-cover h-75"
+              src="login-image.png"
+            />
           </CarouselItem>
           <CarouselItem>
-            <img className="rounded-3xl w-300  h-145" src="recipe-image.png" />
+            <img
+              className="rounded-3xl w-100 object-cover h-75"
+              src="create-image.png"
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              className="rounded-3xl w-100 object-cover h-75"
+              src="preview-image.png"
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              className="rounded-3xl w-100 object-cover h-75"
+              src="recipe-image.png"
+            />
           </CarouselItem>
         </CarouselContent>
         <CarouselPrevious className="ml-20" />
