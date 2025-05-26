@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardContent,
@@ -7,17 +9,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import PorftolioCarousel from "@/components/portfolio/carousel";
+import Button from "../button";
 
 export default function CarouselCard() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <Card className="w-250">
+      <Card className="w-110 shadow-2xl">
         <CardHeader className="flex flex-col justify-center items-center">
           <CardTitle>
-            <p className="font-bold text-5xl ">NomNomNation</p>
+            <p className="font-bold text-2xl ">NomNomNation</p>
           </CardTitle>
           <CardDescription>
-            <p className=" w-150 text-lg">
+            <p className="w-100 text-md">
               My first app ever — NomNomNation, a recipe app where I and others
               can keep all our favorite recipes in one place.
             </p>
@@ -25,21 +28,26 @@ export default function CarouselCard() {
         </CardHeader>
 
         <CardContent>
-          <div className="pt-5 flex flex-col gap-1 justify-center items-center">
+          <div className="flex flex-col gap-1 pb-3 justify-center items-center">
             <div className=" w-105">
-              <p className="font-bold text-lg">Technologies used:</p>
+              <p className="pl-3 font-bold text-md">Technologies used:</p>
             </div>
-            <ol className=" text-lg pb-5">
-              <li>Vite + React</li>
-              <li>ChakraUI</li>
-              <li>Prisma ORM</li>
-              <li>Supabase</li>
-              <li>Express.js</li>
-            </ol>
+            <p className="text-sm">
+              Vite + React, ChakraUI, Prisma ORM, Supabase and Express.js
+            </p>
           </div>
           <PorftolioCarousel />
         </CardContent>
-        <CardFooter></CardFooter>
+
+        <CardFooter className="flex justify-center">
+          <a
+            href="https://nomnomnation.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button />
+          </a>
+        </CardFooter>
       </Card>
     </div>
   );

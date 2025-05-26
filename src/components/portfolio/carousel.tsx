@@ -18,12 +18,12 @@ export default function PorftolioCarousel() {
     <div className="flex justify-center">
       <Carousel
         plugins={[plugin.current]}
-        className="w-100 "
+        className="w-100 shadow-lg rounded-3xl"
         onMouseEnter={() => {
           plugin.current.stop();
         }}
         onMouseLeave={() => {
-          plugin.current.stop();
+          plugin.current.play();
         }}
       >
         <CarouselContent>
@@ -31,41 +31,47 @@ export default function PorftolioCarousel() {
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="home-image.png"
+              alt="Image of homepage"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100  object-cover h-75"
               src="register-image.png"
+              alt="Image of homepage"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100  object-cover h-75"
               src="login-image.png"
+              alt="Image of homepage"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="create-image.png"
+              alt="Image of homepage"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="preview-image.png"
+              alt="Image of homepage"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="recipe-image.png"
+              alt="Image of homepage"
             />
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="ml-20" />
-        <CarouselNext className="mr-20" />
+        <CarouselPrevious className="ml-10" />
+        <CarouselNext className="mr-10" />
       </Carousel>
     </div>
   );
