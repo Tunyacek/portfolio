@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <div className="w-150 border-2 border-dotted rounded-lg h-auto ">
+    <div className="w-150 border-2 border-dotted border-black rounded-lg h-auto ">
       <div className="p-5 flex flex-col gap-2">
         <p className="font-bold text-2xl ">Education</p>
         <p> 🦜Exotic animal breeder SOŠ a SOU Čakovice 2013 - 2017 🐆</p>

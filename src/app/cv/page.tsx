@@ -8,7 +8,7 @@ export default function CV() {
     <div className="pb-10">
       <Header />
 
-      <div className="flex flex-row justify-center gap-15 bg-[#fff0f5] rounded-xl py-10 w-[1500px] mx-auto">
+      <div className="flex flex-row justify-center gap-15 bg-[#fff0f5] rounded-xl  py-10 w-[1500px] mx-auto">
         <div className="flex flex-col justify-between gap-auto ">
           <Education />
           <Extra />

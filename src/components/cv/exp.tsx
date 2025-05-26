@@ -2,7 +2,7 @@ import AboutMe from "./about-me";
 
 export default function Experience() {
   return (
-    <div className="w-150 border-2 border-dotted rounded-lg">
+    <div className="w-150 border-2 border-dotted border-black rounded-lg">
       <div className="p-5 flex flex-col gap-2">
         <AboutMe />
         <hr className="border-dotted border-black w-125 mx-auto mt-2" />
@@ -16,7 +16,11 @@ export default function Experience() {
             During this time, I focused on learning and building projects using
             technologies like React, TypeScript, Express, and Prisma. You can
             find my project{" "}
-            <a href=" https://nomnomnation.vercel.app/" className="underline">
+            <a
+              href=" https://nomnomnation.vercel.app/"
+              className="underline"
+              target="_blank"
+            >
               here!
             </a>{" "}
             or on my Github.
