@@ -1,11 +1,17 @@
 import Header from "@/components/header";
 import CarouselCard from "@/components/portfolio/carousel-card";
+import Footer from "@/components/footer";
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <CarouselCard />
+
+      <main className="flex-1">
+        <CarouselCard />
+      </main>
+
+      <Footer />
     </div>
   );
 }
