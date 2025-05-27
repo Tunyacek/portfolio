@@ -13,7 +13,7 @@ import Button from "../button";
 
 export default function CarouselCard() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="sm: flex-col md: flex flex-row justify-center items-center">
       <Card className="w-110 shadow-2xl">
         <CardHeader className="flex flex-col justify-center items-center">
           <CardTitle>
