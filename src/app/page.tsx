@@ -31,7 +31,11 @@ export default function Home() {
           </div>
         </div>
         <div className="pt-20">
-          <img src="me.png" className="rounded-[100%] h-100 w-100" />
+          <img
+            src="me.png"
+            alt="cartoon image of me"
+            className="rounded-[100%] h-100 w-100"
+          />
         </div>
       </main>
       <Footer />
