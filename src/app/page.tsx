@@ -1,10 +1,11 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="flex flex-row gap-50 justify-center pt-10">
+      <main className="flex flex-row gap-50 justify-center pt-10 flex-1">
         <div className="flex flex-col gap-15">
           <div>
             <h1 className="text-8xl mb-[-10px] -rotate-10"> ✨Welcome!</h1>
@@ -32,7 +33,8 @@ export default function Home() {
         <div className="pt-20">
           <img src="me.png" className="rounded-[100%] h-100 w-100" />
         </div>
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }

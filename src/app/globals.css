@@ -4,8 +4,10 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
-  background-color: hsla(340, 100%, 74%, 0.384);
+  background-color: rgba(255, 122, 167, 0.384);
 }
+
+
 
 ul li {
   font-family: var(--font-emily), sans-serif; }
