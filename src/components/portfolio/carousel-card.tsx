@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import PorftolioCarousel from "@/components/portfolio/carousel";
-import Button from "../button";
+import FlowerButton from "../button";
 
 export default function CarouselCard() {
   return (
@@ -45,7 +45,7 @@ export default function CarouselCard() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button />
+            <FlowerButton />
           </a>
         </CardFooter>
       </Card>
