@@ -8,8 +8,22 @@ export default function Home() {
       <main className="flex flex-col md:flex-row gap-50 justify-center pt-10 flex-1 ">
         <div className="flex flex-col gap-15">
           <div>
-            <h1 className="text-8xl mb-[-10px] -rotate-10"> ✨Welcome!</h1>
-            <p className="text-xl pl-50 pt-2 -rotate-7">My name is Nikola 🌸</p>
+            <div className="flex flex-row -rotate-10">
+              <img
+                src="star-removebg.png"
+                alt="image of star"
+                className="w-30 h-20 "
+              />
+              <h1 className="text-8xl mb-[-10px]  ml-[-30px]">Welcome!</h1>
+            </div>
+            <div className="flex flex-row -rotate-7">
+              <p className="text-xl pl-50 pt-2 ">My name is Nikola</p>
+              <img
+                src="white-flower-removebg.png"
+                alt="image of white flower"
+                className="w-13 h-8"
+              />
+            </div>
           </div>
           <div className="xl:hidden flex justify-center">
             <img
