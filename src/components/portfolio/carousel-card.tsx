@@ -9,11 +9,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import PorftolioCarousel from "@/components/portfolio/carousel";
-import Button from "../button";
+import FlowerButton from "../button";
 
 export default function CarouselCard() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="sm: flex-col md: flex flex-row justify-center items-center">
       <Card className="w-110 shadow-2xl">
         <CardHeader className="flex flex-col justify-center items-center">
           <CardTitle>
@@ -45,7 +45,7 @@ export default function CarouselCard() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button />
+            <FlowerButton />
           </a>
         </CardFooter>
       </Card>

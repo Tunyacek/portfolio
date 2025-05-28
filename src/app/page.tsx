@@ -5,14 +5,21 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex flex-row gap-50 justify-center pt-10 flex-1">
+      <main className="flex flex-col md:flex-row gap-50 justify-center pt-10 flex-1 ">
         <div className="flex flex-col gap-15">
           <div>
             <h1 className="text-8xl mb-[-10px] -rotate-10"> ✨Welcome!</h1>
             <p className="text-xl pl-50 pt-2 -rotate-7">My name is Nikola 🌸</p>
           </div>
+          <div className="xl:hidden flex justify-center">
+            <img
+              src="me.png"
+              alt="cartoon image of me"
+              className="rounded-[100%] h-100 w-100"
+            />
+          </div>
           <div className="pt-1">
-            <p className="w-150 text-xl text-center">
+            <p className="w-150 text-xl text-center ml-15 md:ml-0 pb-10 xl:p-0">
               My journey into web development began in 2023, after my boyfriend
               inspired me with his own career change. After many months spent
               learning, I found React to be the one that clicked for me and made
@@ -30,8 +37,12 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="pt-20">
-          <img src="me.png" className="rounded-[100%] h-100 w-100" />
+        <div className="hidden xl:block pt-20">
+          <img
+            src="me.png"
+            alt="cartoon image of me"
+            className="rounded-[100%] h-100 w-100"
+          />
         </div>
       </main>
       <Footer />

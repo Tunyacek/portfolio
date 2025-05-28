@@ -31,42 +31,42 @@ export default function PorftolioCarousel() {
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="home-image.png"
-              alt="Image of homepage"
+              alt="Image of the homepage"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100  object-cover h-75"
               src="register-image.png"
-              alt="Image of homepage"
+              alt="Image of the register page"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100  object-cover h-75"
               src="login-image.png"
-              alt="Image of homepage"
+              alt="Image of the login page"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="create-image.png"
-              alt="Image of homepage"
+              alt="Image of the creation page"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="preview-image.png"
-              alt="Image of homepage"
+              alt="Image of the list of recipes"
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="rounded-3xl w-100 object-cover h-75"
               src="recipe-image.png"
-              alt="Image of homepage"
+              alt="Image of the single recipe page"
             />
           </CarouselItem>
         </CarouselContent>
