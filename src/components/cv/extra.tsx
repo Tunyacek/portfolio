@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 export default function Extra() {
   return (
     <div className="w-150 border-2 border-dotted border-black rounded-lg h-auto ">
