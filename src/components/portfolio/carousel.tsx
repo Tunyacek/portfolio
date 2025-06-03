@@ -30,44 +30,56 @@ export default function PorftolioCarousel() {
         <CarouselContent>
           <CarouselItem>
             <Image
-              className="rounded-3xl w-100 object-cover h-75"
-              src="home-image.png"
+              className="rounded-3xl object-cover w-full h-[300px]"
+              src="/home-image.png"
               alt="Image of the homepage"
+              width={1000}
+              height={300}
             />
           </CarouselItem>
           <CarouselItem>
             <Image
-              className="rounded-3xl w-100  object-cover h-75"
-              src="register-image.png"
+              className="rounded-3xl object-cover w-full h-[300px]"
+              src="/register-image.png"
               alt="Image of the register page"
+              width={1000}
+              height={300}
             />
           </CarouselItem>
           <CarouselItem>
             <Image
-              className="rounded-3xl w-100  object-cover h-75"
-              src="login-image.png"
+              className="rounded-3xl object-cover w-full h-[300px]"
+              src="/login-image.png"
               alt="Image of the login page"
+              width={1000}
+              height={300}
             />
           </CarouselItem>
           <CarouselItem>
             <Image
-              className="rounded-3xl w-100 object-cover h-75"
-              src="create-image.png"
+              className="rounded-3xl object-cover w-full h-[300px]"
+              src="/create-image.png"
               alt="Image of the creation page"
+              width={1000}
+              height={300}
             />
           </CarouselItem>
           <CarouselItem>
             <Image
-              className="rounded-3xl w-100 object-cover h-75"
-              src="preview-image.png"
+              className="rounded-3xl object-cover w-full h-[300px]"
+              src="/preview-image.png"
               alt="Image of the list of recipes"
+              width={1000}
+              height={300}
             />
           </CarouselItem>
           <CarouselItem>
             <Image
-              className="rounded-3xl w-100 object-cover h-75"
-              src="recipe-image.png"
+              className="rounded-3xl object-cover w-full h-[300px]"
+              src="/recipe-image.png"
               alt="Image of the single recipe page"
+              width={1000}
+              height={300}
             />
           </CarouselItem>
         </CarouselContent>

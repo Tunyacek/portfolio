@@ -9,7 +9,9 @@ export default function FlowerButton() {
       <Image
         src="/flower-removebg.png"
         alt="flower on button"
-        className="absolute -top-3 -right-3 w-12 h-11"
+        className="absolute -top-3 -right-3 "
+        width={55}
+        height={10}
       />
     </div>
   );
