@@ -23,7 +23,7 @@ const meow = Meow_Script({
 export const metadata: Metadata = {
   title: " Portfolio of Nikola Beránková",
   description:
-    "Hello! Welcome to my porftolio! I am frontend developer who wants to build user-friendly and pretty responsive websites!",
+    "Hello! Welcome to my portfolio! I am frontend developer who wants to build user-friendly and pretty responsive websites!",
 };
 
 export default function RootLayout({
