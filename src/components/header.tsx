@@ -1,55 +1,198 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  return (
-    <div>
-      <nav className="h-[125px]">
-        <ul className="flex flex-row-reverse pt-5 pr-10 gap-3">
-          <li className="pr-2 pt-[6px]">
-            <a
-              href="https://github.com/Tunyacek"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/github-mark.svg"
-                alt="Github Icon"
-                width={30}
-                height={30}
-              />
-            </a>
-          </li>
-          <li className="text-5xl pointer-events-none">|</li>
-          <li className=" pt-[7px]">
-            <a
-              href="https://www.linkedin.com/in/nik-berankova/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/InBug-Black.png"
-                alt="Linkedin Icon"
-                width={30}
-                height={30}
-              />
-            </a>
-          </li>
-          <li className="text-5xl pointer-events-none">|</li>
-          <li className="text-3xl pt-[5px]">
-            <Link href="/cv">My CV</Link>
-          </li>
-          <li className="text-5xl pointer-events-none">|</li>
-          <li className="text-3xl  pt-[5px]">
-            <Link href="/portfolio">My portfolio</Link>
-          </li>
-          <li className="text-5xl pointer-events-none">|</li>
-          <li className="text-3xl pt-[5px]">
-            <Link href="/">
-              <img src="home.svg" alt="Home Icon" width={40} height={40} />
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
+  let content;
+  let pathname = usePathname();
+
+  switch (pathname) {
+    case (pathname = "/"):
+      content = (
+        <div>
+          <nav className="h-[125px]">
+            <ul className="flex flex-row-reverse pt-5 pr-10 ">
+              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <a
+                  href="https://github.com/Tunyacek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/github-mark.svg"
+                    alt="Github Icon"
+                    className="ml-4 mt-2.5"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <a
+                  href="https://www.linkedin.com/in/nik-berankova/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/InBug-Black.png"
+                    alt="Linkedin Icon"
+                    width={30}
+                    height={30}
+                    className="ml-4.5 mt-2.5"
+                  />
+                </a>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+                <Link href="/cv">My CV</Link>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl  pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+                <Link href="/portfolio">My portfolio</Link>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors pointer-events-none">
+                <Link href="/">
+                  <img
+                    src="home.svg"
+                    alt="Home Icon"
+                    className="ml-2.5"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      );
+      break;
+    case (pathname = "/cv"):
+      content = (
+        <div>
+          <nav className="h-[125px]">
+            <ul className="flex flex-row-reverse pt-5 pr-10 ">
+              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <a
+                  href="https://github.com/Tunyacek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/github-mark.svg"
+                    alt="Github Icon"
+                    className="ml-4 mt-2.5"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <a
+                  href="https://www.linkedin.com/in/nik-berankova/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/InBug-Black.png"
+                    alt="Linkedin Icon"
+                    width={30}
+                    height={30}
+                    className="ml-4.5 mt-2.5"
+                  />
+                </a>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none">
+                <Link href="/cv">My CV</Link>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl  pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+                <Link href="/portfolio">My portfolio</Link>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <Link href="/">
+                  <img
+                    src="home.svg"
+                    alt="Home Icon"
+                    className="ml-2.5"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      );
+      break;
+    case (pathname = "/portfolio"):
+      content = (
+        <div>
+          <nav className="h-[125px]">
+            <ul className="flex flex-row-reverse pt-5 pr-10 ">
+              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <a
+                  href="https://github.com/Tunyacek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/github-mark.svg"
+                    alt="Github Icon"
+                    className="ml-4 mt-2.5"
+                    width={30}
+                    height={30}
+                  />
+                </a>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <a
+                  href="https://www.linkedin.com/in/nik-berankova/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/InBug-Black.png"
+                    alt="Linkedin Icon"
+                    width={30}
+                    height={30}
+                    className="ml-4.5 mt-2.5"
+                  />
+                </a>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+                <Link href="/cv">My CV</Link>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl  pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none">
+                <Link href="/portfolio">My portfolio</Link>
+              </li>
+              <li className="text-5xl pointer-events-none">|</li>
+              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+                <Link href="/">
+                  <img
+                    src="home.svg"
+                    alt="Home Icon"
+                    className="ml-2.5"
+                    width={40}
+                    height={40}
+                  />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      );
+
+      break;
+  }
+
+  return <>{content}</>;
 }
