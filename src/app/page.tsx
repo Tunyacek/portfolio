@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="pt-1">
             <p className="w-110 sm:w-130 md:w-150 text-xl text-center ml-15 md:ml-0 pb-10 xl:p-0">
-              My journey into web development began in 2023, after my boyfriend
+              {` My journey into web development began in 2023, after my boyfriend
               inspired me with his own career change. After many months spent
               learning, I found React to be the one that clicked for me and made
               me want to keep learning more! I am learning with AI (ChatGPT),
@@ -43,7 +43,7 @@ export default function Home() {
               adapting them to my needs and making sure I understand what I'm
               doing. Now, I'm learning Next.js and Tailwind CSS as I continue
               taking small, steady steps toward becoming a confident and skilled
-              React Master.{" "}
+              React Master.{" "} `}
               <Image
                 src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif"
                 alt="cute bongo cat gif"
