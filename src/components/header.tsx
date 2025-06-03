@@ -45,20 +45,20 @@ export default function Header() {
                 </a>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
                 <Link href="/cv">My CV</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl  pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
                 <Link href="/portfolio">My portfolio</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors pointer-events-none">
+              <li className="h-12 pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors pointer-events-none border border-[#ff9abc94] border-2">
                 <Link href="/">
                   <img
                     src="home.svg"
                     alt="Home Icon"
-                    className="ml-2.5"
+                    className="ml-2 mt-[-2px]"
                     width={40}
                     height={40}
                   />
@@ -106,20 +106,20 @@ export default function Header() {
                 </a>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none">
+              <li className=" text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border border-[#ff9abc94] border-2">
                 <Link href="/cv">My CV</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl  pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
                 <Link href="/portfolio">My portfolio</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors border  border-2 border-transparent">
                 <Link href="/">
                   <img
                     src="home.svg"
                     alt="Home Icon"
-                    className="ml-2.5"
+                    className="ml-2 mt-[-2px]"
                     width={40}
                     height={40}
                   />
@@ -167,20 +167,20 @@ export default function Header() {
                 </a>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3">
+              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
                 <Link href="/cv">My CV</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl  pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none">
+              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border border-[#ff9abc94] border-2">
                 <Link href="/portfolio">My portfolio</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
+              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors border  border-2 border-transparent ">
                 <Link href="/">
                   <img
                     src="home.svg"
                     alt="Home Icon"
-                    className="ml-2.5"
+                    className="ml-2 mt-[-2px]"
                     width={40}
                     height={40}
                   />

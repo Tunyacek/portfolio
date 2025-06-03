@@ -7,7 +7,7 @@ export default function Home() {
       <Header />
       <main className="flex flex-col md:flex-row gap-50 justify-center pt-10 flex-1 ">
         <div className="flex flex-col gap-15">
-          <div>
+          <div className="pl-[50px] sm:pl-[80px]md:pl-0">
             <div className="flex flex-row -rotate-10">
               <img
                 src="star-removebg.png"
@@ -33,7 +33,7 @@ export default function Home() {
             />
           </div>
           <div className="pt-1">
-            <p className="w-150 text-xl text-center ml-15 md:ml-0 pb-10 xl:p-0">
+            <p className="w-110 sm:w-130 md:w-150 text-xl text-center ml-15 md:ml-0 pb-10 xl:p-0">
               My journey into web development began in 2023, after my boyfriend
               inspired me with his own career change. After many months spent
               learning, I found React to be the one that clicked for me and made
@@ -46,7 +46,7 @@ export default function Home() {
               <img
                 src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif"
                 alt="cute bongo cat gif"
-                className="w-10 h-10 ml-[460px] mt-[-30px]"
+                className="w-10 h-10 ml-[430px] mt-[-30px] sm:ml-[505px] sm:mt-[-30px] md:ml-[455px]"
               />
             </p>
           </div>
