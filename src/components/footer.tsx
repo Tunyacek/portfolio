@@ -43,6 +43,24 @@ export default function Footer() {
           >
             Icons8
           </a>
+          ,{" "}
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-black transition"
+          >
+            LinkedIn
+          </a>
+          ,{" "}
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-black transition"
+          >
+            Github
+          </a>
         </p>
       </div>
     </footer>
