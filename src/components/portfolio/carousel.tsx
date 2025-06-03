@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 export default function PorftolioCarousel() {
   const plugin = React.useRef(
@@ -28,42 +29,42 @@ export default function PorftolioCarousel() {
       >
         <CarouselContent>
           <CarouselItem>
-            <img
+            <Image
               className="rounded-3xl w-100 object-cover h-75"
               src="home-image.png"
               alt="Image of the homepage"
             />
           </CarouselItem>
           <CarouselItem>
-            <img
+            <Image
               className="rounded-3xl w-100  object-cover h-75"
               src="register-image.png"
               alt="Image of the register page"
             />
           </CarouselItem>
           <CarouselItem>
-            <img
+            <Image
               className="rounded-3xl w-100  object-cover h-75"
               src="login-image.png"
               alt="Image of the login page"
             />
           </CarouselItem>
           <CarouselItem>
-            <img
+            <Image
               className="rounded-3xl w-100 object-cover h-75"
               src="create-image.png"
               alt="Image of the creation page"
             />
           </CarouselItem>
           <CarouselItem>
-            <img
+            <Image
               className="rounded-3xl w-100 object-cover h-75"
               src="preview-image.png"
               alt="Image of the list of recipes"
             />
           </CarouselItem>
           <CarouselItem>
-            <img
+            <Image
               className="rounded-3xl w-100 object-cover h-75"
               src="recipe-image.png"
               alt="Image of the single recipe page"
