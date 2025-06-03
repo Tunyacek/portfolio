@@ -3,8 +3,8 @@ export default function Extra() {
     <div className="w-150 border-2 border-dotted border-black rounded-lg h-auto ">
       <div className="p-5 flex flex-col gap-2">
         <p className="font-bold text-2xl">Extras</p>
-        <p className="font-bold text-lg ">My fav "quotes"</p>
-        <p className="italic">🌹“Born to blossom, bloom to perish”🥀</p>
+        <p className="font-bold text-lg "> {` >My fav "quotes"`}</p>
+        <p className="italic"> {` 🌹“Born to blossom, bloom to perish”🥀`}</p>
         <p className="italic">
           {`   🙂“Money doesn't change character, it exposes it”🙃 `}
         </p>
