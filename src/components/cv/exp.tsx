@@ -55,11 +55,11 @@ export default function Experience() {
               ✨Planning and delivering age-appropriate lessons and activities.
             </li>
             <li>
-              ✨Supporting children's emotional, social, and cognitive
-              development.
+              {`✨Supporting children's emotional, social, and cognitive
+              development.`}
             </li>
             <li>✨Ensuring a safe and nurturing environment</li>
-            <li>✨Communicating with parents about children's progress</li>
+            <li>{`✨Communicating with parents about children's progress`}</li>
             <li>✨Assisting children with personal care needs</li>
           </ol>
         </div>
