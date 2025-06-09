@@ -17,15 +17,15 @@ ul li {
     font-family: var(--font-meow), cursive; }
 
     p {
-      font-family: var(--font-delius), serif; 
+      font-family: var(--font-comfortaa), serif; 
     }
 
     ol li {
-      font-family: var(--font-delius), serif; 
+      font-family: var(--font-comfortaa), serif; 
     }
 
     button {
-         font-family: var(--font-delius), serif; 
+         font-family: var(--font-comfortaa), serif; 
     }
 
     @theme inline {
