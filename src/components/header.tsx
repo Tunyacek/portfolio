@@ -42,8 +42,8 @@ export default function Header() {
                     href={link.href}
                     className={`${sharedClasses} ${
                       isActive
-                        ? "pointer-events-none border-2 border-[#ff9abc94]"
-                        : "border-2 border-transparent"
+                        ? "pointer-events-none sm:border-2 border-[#ff9abc94]"
+                        : "sm:border-2 border-transparent"
                     }`}
                   >
                     <Image
@@ -51,7 +51,7 @@ export default function Header() {
                       alt={link.alt || ""}
                       width={40}
                       height={0}
-                      className="m-auto"
+                      className="m-auto w-[25px] sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px]"
                     />
                   </Link>
                 ) : link.label ? (
@@ -59,8 +59,8 @@ export default function Header() {
                     href={link.href}
                     className={`text-md sm:text-3xl m-auto ${sharedClasses} ${
                       isActive
-                        ? "pointer-events-none border-2 border-[#ff9abc94]"
-                        : "border-2 border-transparent"
+                        ? "pointer-events-none sm:border-2 border-[#ff9abc94]"
+                        : "sm:border-2 border-transparent"
                     }`}
                   >
                     {link.label}
@@ -77,6 +77,7 @@ export default function Header() {
                       alt={link.alt || ""}
                       width={40}
                       height={0}
+                      className="m-auto w-[25px] sm:w-[30px] sm:h-[30px] md:w-[40px] md:h-[40px]"
                     />
                   </a>
                 )}{" "}
