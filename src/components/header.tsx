@@ -4,196 +4,87 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const links = [
+  { href: "/", icon: "/home.svg", alt: "Home Icon" },
+  { href: "/portfolio", label: "My portfolio" },
+  { href: "/cv", label: "My CV" },
+  {
+    href: "https://www.linkedin.com/in/nik-berankova/",
+    icon: "/InBug-Black.png",
+    alt: "LinkedIn",
+    external: true,
+  },
+  {
+    href: "https://github.com/Tunyacek",
+    icon: "/github-mark.svg",
+    alt: "GitHub",
+    external: true,
+  },
+];
+
 export default function Header() {
-  let content;
-  let pathname = usePathname();
+  const pathname = usePathname();
 
-  switch (pathname) {
-    case (pathname = "/"):
-      content = (
-        <div>
-          <nav className="h-[125px]">
-            <ul className="flex flex-row-reverse pt-5 pr-10 ">
-              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
-                <a
-                  href="https://github.com/Tunyacek"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/github-mark.svg"
-                    alt="Github Icon"
-                    className="ml-4 mt-2.5"
-                    width={30}
-                    height={30}
-                  />
-                </a>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
-                <a
-                  href="https://www.linkedin.com/in/nik-berankova/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/InBug-Black.png"
-                    alt="Linkedin Icon"
-                    width={30}
-                    height={30}
-                    className="ml-4.5 mt-2.5"
-                  />
-                </a>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
-                <Link href="/cv">My CV</Link>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
-                <Link href="/portfolio">My portfolio</Link>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="h-12 pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors pointer-events-none border-none sm:border-solid sm:border-[#ff9abc94] sm:border-2">
-                <Link href="/">
-                  <Image
-                    src="home.svg"
-                    alt="Home Icon"
-                    className="ml-2 mt-[-2px]"
-                    width={40}
-                    height={40}
-                  />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      );
-      break;
-    case (pathname = "/cv"):
-      content = (
-        <div>
-          <nav className="h-[125px]">
-            <ul className="flex flex-row-reverse pt-5 pr-10 ">
-              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
-                <a
-                  href="https://github.com/Tunyacek"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/github-mark.svg"
-                    alt="Github Icon"
-                    className="ml-4 mt-2.5"
-                    width={30}
-                    height={30}
-                  />
-                </a>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
-                <a
-                  href="https://www.linkedin.com/in/nik-berankova/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/InBug-Black.png"
-                    alt="Linkedin Icon"
-                    width={30}
-                    height={30}
-                    className="ml-4.5 mt-2.5"
-                  />
-                </a>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className=" text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border-none sm:border-solid sm:border-[#ff9abc94] sm:border-2">
-                <Link href="/cv">My CV</Link>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
-                <Link href="/portfolio">My portfolio</Link>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors border  border-2 border-transparent">
-                <Link href="/">
-                  <Image
-                    src="home.svg"
-                    alt="Home Icon"
-                    className="ml-2 mt-[-2px]"
-                    width={40}
-                    height={40}
-                  />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      );
-      break;
-    case (pathname = "/portfolio"):
-      content = (
-        <div>
-          <nav className="h-[125px]">
-            <ul className="flex flex-row-reverse pt-5 pr-10 ">
-              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
-                <a
-                  href="https://github.com/Tunyacek"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/github-mark.svg"
-                    alt="Github Icon"
-                    className="ml-4 mt-2.5"
-                    width={30}
-                    height={30}
-                  />
-                </a>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className=" w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors ">
-                <a
-                  href="https://www.linkedin.com/in/nik-berankova/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src="/InBug-Black.png"
-                    alt="Linkedin Icon"
-                    width={30}
-                    height={30}
-                    className="ml-4.5 mt-2.5"
-                  />
-                </a>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 border  border-2 border-transparent">
-                <Link href="/cv">My CV</Link>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border-none sm:border-solid sm:border-[#ff9abc94] sm:border-2">
-                <Link href="/portfolio">My portfolio</Link>
-              </li>
-              <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-3xl pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors border  border-2 border-transparent ">
-                <Link href="/">
-                  <Image
-                    src="home.svg"
-                    alt="Home Icon"
-                    className="ml-2 mt-[-2px]"
-                    width={40}
-                    height={40}
-                  />
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      );
+  return (
+    <header>
+      <nav className="pt-5 pb-10 pr-3">
+        <ul className="flex flex-row justify-end">
+          {links.map((link, i) => {
+            const isActive = pathname === link.href;
+            const sharedClasses = `rounded-4xl p-2 flex items-center justify-center ${
+              !isActive ? "hover:bg-[#ff9abc94] transition-colors" : ""
+            }`;
 
-      break;
-  }
-
-  return <>{content}</>;
+            return (
+              <li key={i}>
+                {link.icon && !link.external ? (
+                  <Link
+                    href={link.href}
+                    className={`${sharedClasses} ${
+                      isActive
+                        ? "pointer-events-none border-2 border-[#ff9abc94]"
+                        : "border-2 border-transparent"
+                    }`}
+                  >
+                    <Image
+                      src={link.icon}
+                      alt={link.alt || ""}
+                      width={40}
+                      height={0}
+                      className="m-auto"
+                    />
+                  </Link>
+                ) : link.label ? (
+                  <Link
+                    href={link.href}
+                    className={`text-md sm:text-3xl m-auto ${sharedClasses} ${
+                      isActive
+                        ? "pointer-events-none border-2 border-[#ff9abc94]"
+                        : "border-2 border-transparent"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={sharedClasses}
+                  >
+                    <Image
+                      src={link.icon!}
+                      alt={link.alt || ""}
+                      width={40}
+                      height={0}
+                    />
+                  </a>
+                )}{" "}
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </header>
+  );
 }
