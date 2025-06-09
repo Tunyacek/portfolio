@@ -30,7 +30,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="xl:hidden flex justify-center pl-10">
+          <div className="xl:hidden flex justify-center ">
             <div className="relative w-50 h-50">
               <Image
                 src="/me.png"
