@@ -21,7 +21,7 @@ const meow = Meow_Script({
 });
 
 export const metadata: Metadata = {
-  title: " Portfolio of Nikola Beránková",
+  title: "My Portfolio | Nikola Beránková",
   description:
     "Hello! Welcome to my portfolio! I am frontend developer who wants to build user-friendly and pretty responsive websites!",
 };
