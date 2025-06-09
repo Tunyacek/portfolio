@@ -13,14 +13,14 @@ import FlowerButton from "../button";
 
 export default function CarouselCard() {
   return (
-    <div className="sm: flex-col md: flex flex-row justify-center items-center">
-      <Card className="w-110 shadow-2xl">
+    <div className="sm: flex-col md: flex flex-row justify-center items-center pb-20">
+      <Card className="w-70 sm:w-110 shadow-2xl">
         <CardHeader className="flex flex-col justify-center items-center">
           <CardTitle>
-            <p className="font-bold text-2xl ">NomNomNation</p>
+            <p className="font-bold text-md sm:text-2xl ">NomNomNation</p>
           </CardTitle>
           <CardDescription>
-            <p className="w-100 text-md">
+            <p className="max-w-100 text-xs sm:text-md">
               My first app ever — NomNomNation, a recipe app where I and others
               can keep all our favorite recipes in one place.
             </p>
@@ -29,10 +29,12 @@ export default function CarouselCard() {
 
         <CardContent>
           <div className="flex flex-col gap-1 pb-3 justify-center items-center">
-            <div className=" w-105">
-              <p className="pl-3 font-bold text-md">Technologies used:</p>
+            <div className="max-w-105">
+              <p className="pl-3 font-bold text-sm sm:text-md">
+                Technologies used:
+              </p>
             </div>
-            <p className="text-sm">
+            <p className="text-xs sm:text-sm">
               Vite + React, ChakraUI, Prisma ORM, Supabase and Express.js
             </p>
           </div>

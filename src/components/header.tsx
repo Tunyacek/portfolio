@@ -54,7 +54,7 @@ export default function Header() {
                 <Link href="/portfolio">My portfolio</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="h-12 pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors pointer-events-none border border-[#ff9abc94] border-2">
+              <li className="h-12 pt-[5px] w-15 rounded-3xl hover:bg-[#ff9abc94] transition-colors pointer-events-none border-none sm:border-solid sm:border-[#ff9abc94] sm:border-2">
                 <Link href="/">
                   <Image
                     src="home.svg"
@@ -107,7 +107,7 @@ export default function Header() {
                 </a>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className=" text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border border-[#ff9abc94] border-2">
+              <li className=" text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border-none sm:border-solid sm:border-[#ff9abc94] sm:border-2">
                 <Link href="/cv">My CV</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
@@ -172,7 +172,7 @@ export default function Header() {
                 <Link href="/cv">My CV</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>
-              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border border-[#ff9abc94] border-2">
+              <li className="text-xl pt-[8px] sm:text-3xl sm:pt-[5px] rounded-3xl hover:bg-[#ff9abc94] transition-colors px-3 pointer-events-none border-none sm:border-solid sm:border-[#ff9abc94] sm:border-2">
                 <Link href="/portfolio">My portfolio</Link>
               </li>
               <li className="text-5xl pointer-events-none">|</li>

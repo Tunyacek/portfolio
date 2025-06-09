@@ -19,7 +19,7 @@ export default function PorftolioCarousel() {
     <div className="flex justify-center">
       <Carousel
         plugins={[plugin.current]}
-        className="w-100 shadow-lg rounded-3xl"
+        className="max-w-100 shadow-lg rounded-3xl"
         onMouseEnter={() => {
           plugin.current.stop();
         }}

@@ -1,8 +1,8 @@
 export default function AboutMe() {
   return (
-    <div>
+    <div className="max-w-[600px]">
       <p className="font-bold text-2xl">About Me</p>
-      <p>
+      <p className="text-sm md:text-md">
         {`  I'm 28 and a total animal lover. I enjoy cooking (but honestly, eating
         is the best part! 🍕), and I like hitting the pool for a good swim. When
         I'm chilling, you'll probably find me smashing the keyboard or PS
