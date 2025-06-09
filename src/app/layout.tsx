@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Delius, Emilys_Candy, Meow_Script } from "next/font/google";
+import { Comfortaa, Emilys_Candy, Meow_Script } from "next/font/google";
 import "./globals.css";
 
 const emily = Emilys_Candy({
@@ -8,10 +8,10 @@ const emily = Emilys_Candy({
   variable: "--font-emily",
 });
 
-const delius = Delius({
+const comfortaa = Comfortaa({
   subsets: ["latin"],
   weight: ["400"],
-  variable: "--font-delius",
+  variable: "--font-comfortaa",
 });
 
 const meow = Meow_Script({
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${meow.variable} ${delius.variable} ${emily.variable} antialiased`}
+        className={` ${meow.variable} ${comfortaa.variable} ${emily.variable} antialiased`}
       >
         {children}
       </body>
