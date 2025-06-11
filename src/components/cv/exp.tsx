@@ -47,7 +47,7 @@ export default function Experience() {
             </li>
           </ol>
         </div>
-        <hr className=" border-dotted border-black my-2 w-80 mx-auto" />
+        <hr className=" border-dotted border-black my-2 w-40 sm:w-80 mx-auto" />
         <div>
           <p>2020 - 2023</p>
           <p className="font-bold text-lg">ZŠ a MŠ Dolákova</p>
@@ -69,7 +69,7 @@ export default function Experience() {
             </li>
           </ol>
         </div>
-        <hr className=" border-dotted border-black my-2 w-80 mx-auto" />
+        <hr className=" border-dotted border-black my-2 w-40 sm:w-80 mx-auto" />
         <div className="pb-2">
           <p>2018 - 2020</p>
           <p className="font-bold text-lg">FANY GASTROSERVIS s.r.o.</p>
